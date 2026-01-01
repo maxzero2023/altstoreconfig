@@ -1,0 +1,41 @@
+{
+  "name": "RedDragon Source",
+  "subtitle": "",
+  "description": "",
+  "iconURL": "https://i.imgur.com/ISSgNc0.png",
+  "website": "",
+  "patreonURL": "",
+  "tintColor": "#6156e2",
+  "featuredApps": [],
+  "apps": [
+    {
+      "name": "MC",
+      "bundleIdentifier": "com.water.of.life.demo",
+      "marketplaceID": "",
+      "developerName": "MC",
+      "subtitle": "",
+      "localizedDescription": "This is an awesome app only available on AltStore.",
+      "iconURL": "https://i.imgur.com/kmzFHjz.png",
+      "tintColor": "#6156e2",
+      "category": "other",
+      "screenshots": [],
+      "versions": [
+        {
+          "downloadURL": "https://a93w-dev.oukai01.com/dragonDown/release/variant/d9b6a7f4-f2dc-3a94-b7b8-812dcdaa1b26.ipa",
+          "size": 30000000,
+          "version": "1.0.1",
+          "buildVersion": "",
+          "date": "2025-12-30T04:42:00-08:00",
+          "localizedDescription": null,
+          "minOSVersion": null
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {}
+      },
+      "patreon": {}
+    }
+  ],
+  "news": []
+}
