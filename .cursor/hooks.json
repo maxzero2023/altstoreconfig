@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "hooks": {
+    "beforeShellExecution": [
+      {
+        "command": ".cursor/hooks/before-shell.sh",
+        "timeout": 30
+      }
+    ],
+    "afterShellExecution": [
+      {
+        "command": ".cursor/hooks/after-shell.sh",
+        "timeout": 10
+      }
+    ],
+    "afterFileEdit": [
+      {
+        "command": ".cursor/hooks/after-edit.sh",
+        "timeout": 10
+      }
+    ],
+    "sessionStart": [
+      {
+        "command": ".cursor/hooks/session-start.sh",
+        "timeout": 5
+      }
+    ]
+  }
+}
