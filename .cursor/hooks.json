@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "hooks": {
+    "afterFileEdit": [
+      {
+        "command": "./hooks/format.sh",
+        "timeout": 10
+      }
+    ],
+    "beforeShellExecution": [
+      {
+        "command": "./hooks/approve-command.sh",
+        "timeout": 30,
+        "matcher": "rm|curl|wget|docker"
+      }
+    ],
+    "sessionStart": [
+      {
+        "command": "echo '{\"status\": \"ok\"}'"
+      }
+    ]
+  }
+}
