@@ -1,22 +1,28 @@
 {
   "version": 1,
   "hooks": {
-    "afterFileEdit": [
+    "beforeShellExecution": [
       {
-        "command": "./hooks/format.sh",
+        "command": ".cursor/hooks/before-shell.sh",
+        "timeout": 30
+      }
+    ],
+    "afterShellExecution": [
+      {
+        "command": ".cursor/hooks/after-shell.sh",
         "timeout": 10
       }
     ],
-    "beforeShellExecution": [
+    "afterFileEdit": [
       {
-        "command": "./hooks/approve-command.sh",
-        "timeout": 30,
-        "matcher": "rm|curl|wget|docker"
+        "command": ".cursor/hooks/after-edit.sh",
+        "timeout": 10
       }
     ],
     "sessionStart": [
       {
-        "command": "echo '{\"status\": \"ok\"}'"
+        "command": ".cursor/hooks/session-start.sh",
+        "timeout": 5
       }
     ]
   }
